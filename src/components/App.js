@@ -27,7 +27,7 @@ export default function App() {
                 }}>
                     <div style={{ flexGrow: 1 }}>
                         <h1 style={{ marginBottom: 0 }}>
-                            <img alt="Ride Tracker" src="/images/logos/logo-white.png" style={{
+                            <img alt="Ride Tracker" src="/images/logos/logo-white.png" width={1928} height={337} style={{
                                 width: "80%"
                             }}/>
                         </h1>
@@ -39,13 +39,13 @@ export default function App() {
 
                     <div>
                         <h2>Currently in the works, follow me to see the progress:</h2>
-                        
+
                         <div style={{
                             display: "flex",
                             flexDirection: "row",
                             gap: "1em"
                         }}>
-                            <img alt="Nora Söderlund" src="/images/uploads/1678048199639.jpg" style={{
+                            <img alt="Nora Söderlund" src="/images/uploads/1678048199639.jpg" width={400} height={400} style={{
                                 width: "6.5em",
                                 height: "6.5em",
                                 
@@ -103,7 +103,7 @@ export default function App() {
 
                 <div>
                     <PhoneImage>
-                        <img src="/images/2022/draw-route.jpg" style={{
+                        <img src="/images/2022/draw-route.jpg" width={1080} height={2070} style={{
                             height: "60vh"
                         }}/>
                     </PhoneImage>

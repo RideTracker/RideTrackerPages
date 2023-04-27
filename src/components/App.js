@@ -2,15 +2,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PhoneImage } from "./PhoneImage";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useRef } from "react";
 
 export default function App() {
+    const contentRef = useRef();
+
+    useEffect(() => {
+        contentRef.current.style.animation = "fade-in-animation 1s";
+    }, []);
+
     return (
         <div style={{
             backgroundColor: "#181821",
 
             height: "100vh"
         }}>
-            <div style={{
+            <div ref={contentRef} style={{
                 height: "60vh",
                 padding: "20vh",
 

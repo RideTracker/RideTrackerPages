@@ -77,7 +77,7 @@ export default function App() {
                                     flexDirection: "row",
                                     gap: "2em"
                                 }}>
-                                    <a href="https://nora-soderlund.se/" style={{
+                                    <a href="https://nora-soderlund.se/" target="_blank" style={{
                                         display: "flex",
                                         gap: ".5em",
                                         alignItems: "center"
@@ -87,7 +87,7 @@ export default function App() {
                                         Developer Blog
                                     </a>
 
-                                    <a href="https://www.linkedin.com/in/nora-soderlund/" style={{
+                                    <a href="https://www.linkedin.com/in/nora-soderlund/" target="_blank" style={{
                                         display: "flex",
                                         gap: ".5em",
                                         alignItems: "center"
@@ -97,7 +97,7 @@ export default function App() {
                                         LinkedIn
                                     </a>
 
-                                    <a href="https://github.com/nora-soderlund/" style={{
+                                    <a href="https://github.com/nora-soderlund/" target="_blank" style={{
                                         display: "flex",
                                         gap: ".5em",
                                         alignItems: "center"

@@ -27,8 +27,10 @@ export default function App() {
                 }}>
                     <div style={{ flexGrow: 1 }}>
                         <h1 style={{ marginBottom: 0 }}>
-                            <img alt="Ride Tracker" src="/images/logos/logo-white.png" width={1928} height={337} style={{
-                                width: "80%"
+                            <img alt="Ride Tracker" src="/images/logos/logo-white.png" style={{
+                                width: "80%",
+
+                                aspectRatio: 1928 / 337
                             }}/>
                         </h1>
 
@@ -45,9 +47,11 @@ export default function App() {
                             flexDirection: "row",
                             gap: "1em"
                         }}>
-                            <img alt="Nora Söderlund" src="/images/uploads/1678048199639.jpg" width={400} height={400} style={{
+                            <img alt="Nora Söderlund" src="/images/uploads/1678048199639.jpg" style={{
                                 width: "6.5em",
                                 height: "6.5em",
+
+                                aspectRatio: 400 / 400,
                                 
                                 borderStyle: "solid",
                                 borderWidth: 7,
@@ -103,8 +107,11 @@ export default function App() {
 
                 <div>
                     <PhoneImage>
-                        <img src="/images/2022/draw-route.jpg" width={1080} height={2070} style={{
-                            height: "60vh"
+                        <img src="/images/2022/draw-route.jpg" style={{
+                            height: "60vh",
+
+                            backgroundColor: "#222633",
+                            aspectRatio: 1080 / 2070
                         }}/>
                     </PhoneImage>
                 </div>

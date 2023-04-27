@@ -4,6 +4,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef } from "react";
 
+import "./App.css";
+
 export default function App() {
     const contentRef = useRef();
 
@@ -17,15 +19,7 @@ export default function App() {
 
             height: "100vh"
         }}>
-            <div ref={contentRef} style={{
-                height: "60vh",
-                padding: "20vh",
-
-                display: "flex",
-                flexDirection: "row",
-
-                gap: "1em"
-            }}>
+            <div ref={contentRef} className="app-content">
                 <div style={{
                     display: "flex",
 
@@ -112,7 +106,7 @@ export default function App() {
                     </div>
                 </div>
 
-                <div>
+                <div className="app-image">
                     <PhoneImage>
                         <img src="/images/2022/draw-route.jpg" style={{
                             height: "60vh",

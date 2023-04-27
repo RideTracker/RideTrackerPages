@@ -1,0 +1,21 @@
+.app-content {
+    height: 60vh;
+    padding: 20vh;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 1em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .app-content {
+        flex-direction: column;
+
+        padding: 1em;
+    }
+
+    .app-image {
+        display: none;
+    }
+}

@@ -26,12 +26,14 @@ export default function App() {
                     flexDirection: "column",
                     flexGrow: 1
                 }}>
-                    <div style={{ flexGrow: 1 }}>
+                    <div style={{ flexGrow: 1, width: "max-content" }}>
                         <h1 style={{ marginBottom: 0 }}>
-                            <img alt="Ride Tracker" src="/images/logos/logo-white.png" style={{
-                                width: "80%",
+                            <img alt="Ride Tracker" src="/images/logos/logo-white-cropped.png" style={{
+                                maxWidth: "80%",
 
-                                aspectRatio: 1928 / 337
+                                width: "20em",
+
+                                aspectRatio: 1733 / 234
                             }}/>
                         </h1>
 
@@ -78,7 +80,7 @@ export default function App() {
                                     }}>
                                         <FontAwesomeIcon icon={faLink} fontSize={24}/>
 
-                                        Developer Blog
+                                        Website
                                     </a>
 
                                     <a href="https://www.linkedin.com/in/nora-soderlund/" target="_blank" style={{

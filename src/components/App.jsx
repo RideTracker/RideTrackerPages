@@ -16,6 +16,10 @@ export default function App() {
     return (
         <div style={{
             backgroundColor: "#181821",
+            backgroundImage: "url(/images/background.jpg)",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center bottom",
+            backgroundSize: "contain",
 
             height: "100vh"
         }}>
@@ -26,7 +30,7 @@ export default function App() {
                     flexDirection: "column",
                     flexGrow: 1
                 }}>
-                    <div style={{ flexGrow: 1, width: "max-content" }}>
+                    <div>
                         <h1 style={{ marginBottom: 0 }}>
                             <img alt="Ride Tracker" src="/images/logos/logo-white-cropped.png" style={{
                                 maxWidth: "80%",
@@ -55,6 +59,8 @@ export default function App() {
                                 height: "6.5em",
 
                                 aspectRatio: 400 / 400,
+
+                                background: "rgba(255, 255, 255, .05)",
                                 
                                 borderStyle: "solid",
                                 borderWidth: 7,
@@ -109,9 +115,11 @@ export default function App() {
                 </div>
 
                 <div className="app-image">
-                    <PhoneImage>
+                    <PhoneImage style={{
+                        height: "60vh"
+                    }}>
                         <img src="/images/2022/draw-route.jpg" style={{
-                            height: "60vh",
+                            height: "100%",
 
                             backgroundColor: "#222633",
                             aspectRatio: 1080 / 2070

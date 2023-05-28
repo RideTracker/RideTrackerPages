@@ -16,12 +16,14 @@ export default function App() {
     return (
         <div style={{
             backgroundColor: "#181821",
-            backgroundImage: "url(/images/background.jpg)",
+            backgroundImage: "url(/images/background4.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center 10vh",
             backgroundSize: "cover",
 
-            height: "100vh"
+            height: "100vh",
+
+            display: "flex"
         }}>
             <div ref={contentRef} className="app-content">
                 <div style={{
@@ -116,7 +118,7 @@ export default function App() {
 
                 <div className="app-image">
                     <PhoneImage style={{
-                        height: "60vh"
+                        height: "40rem"
                     }}>
                         <img src="/images/2022/draw-route.jpg" style={{
                             height: "100%",

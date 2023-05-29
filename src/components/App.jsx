@@ -18,7 +18,7 @@ export default function App() {
             backgroundColor: "#181821",
             backgroundImage: "url(/images/background4.jpg)",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center 10vh",
+            backgroundPosition: "center 20vh",
             backgroundSize: "cover",
 
             height: "100vh",

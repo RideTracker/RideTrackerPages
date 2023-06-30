@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.norasoderlund.ridetrackerapp",
+      "sha256_cert_fingerprints": [
+        "69:06:9C:E2:81:74:C7:28:86:5D:71:46:42:95:B0:BC:D5:6D:7E:B9:83:9C:C4:2B:43:52:44:7D:BC:55:A8:6B"
+      ]
+    }
+  }
+]

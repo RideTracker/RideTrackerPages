@@ -16,7 +16,12 @@
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "typeface-roboto": "^1.1.13",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,12 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/jest": "^29.5.2",
-    "@types/node": "^20.4.1",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "typescript": "^5.1.6"
   }
 }

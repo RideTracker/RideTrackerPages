@@ -61,6 +61,8 @@ export default function PrivacyPolicyPage() {
                             <li><a href="#contact-us">Contact us</a></li>
                         </ol>
 
+                        <p>Last modified 15th of July, 2023.</p>
+
                         <div id="introduction">
                             <h2>Introduction</h2>
 

@@ -9,16 +9,14 @@ export default function IndexPage() {
     return (
         <div>
             <div style={{
-                backgroundColor: "#181821",
+                backgroundColor: "#191923",
                 backgroundImage: "url(/images/background4.jpg)",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center 20vh",
+                backgroundPosition: "center bottom",
                 backgroundSize: "cover",
 
                 height: "80vh",
-                width: "100%",
-
-                padding: "5vh 0"
+                width: "100%"
             }}>
                 <header style={{
                     display: "grid",
@@ -28,9 +26,9 @@ export default function IndexPage() {
 
                     gap: "2vh",
 
-                    gridTemplateRows: "auto auto 1fr"
+                    gridTemplateRows: "auto 1fr auto"
                 }}>
-                    <h1 style={{ display: "flex", flexDirection: "column", margin: "0 auto" }}>
+                    <h1 style={{ display: "flex", flexDirection: "column", margin: "0 auto", padding: "5vh 0" }}>
                         <img alt="Ride Tracker" src="/images/logos/logo-white-cropped.png" style={{
                             maxWidth: "80vw",
 
@@ -50,19 +48,6 @@ export default function IndexPage() {
                             </text>
                         </svg>
                     </h1>
-
-                    <div style={{
-                        display: "flex",
-
-                        flexDirection: "column",
-
-                        opacity: 0
-                    }}>
-                        <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
-                            height: "8vh",
-                            margin: "0 auto"
-                        }}/>
-                    </div>
 
                     <div style={{
                         opacity: .95,
@@ -105,6 +90,17 @@ export default function IndexPage() {
                                 <ScreenshotImage image={"/images/2023/0.9.0/Screenshot_20230706_205804.jpg"}/>
                             </div>
                         </div>
+                    </div>
+
+                    <div style={{
+                        display: "flex",
+                        justifyContent: "flex-end"
+                    }}>
+                        <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank">
+                            <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
+                                height: "8vh"
+                            }}/>
+                        </a>
                     </div>
                 </header>
             </div>

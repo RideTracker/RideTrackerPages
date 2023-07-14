@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
     return (
         <div>
             <div style={{
-                backgroundColor: "#181821",
+                backgroundColor: "#191923",
 
                 width: "100%",
 

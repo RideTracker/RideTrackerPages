@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import IndexPage from "./app/index";
 import PrivacyPolicyPage from "./app/privacyPolicy";
 import ChangelogPage from "./app/changelog";
+import ContactPage from "./app/contact";
 
 let element = document.getElementById("root");
 
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <IndexPage/>
+    },
+
+    {
+        path: "/contact",
+        element: <ContactPage/>
     },
 
     {

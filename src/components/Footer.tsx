@@ -31,6 +31,7 @@ export default function Footer() {
                     }}>
                         <p style={{ color: "#BB87FC" }}>Links</p>
 
+                        <a href="/contact">Contact</a>
                         <a href="/changelog">Changelog</a>
                         <a href="/privacy-policy">Privacy Policy</a>
                     </div>

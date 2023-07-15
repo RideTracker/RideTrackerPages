@@ -82,8 +82,17 @@ export default function IndexPage() {
                 </Header>
             </div>
 
-            <DeveloperContact/>
+            <div style={{
+                backgroundColor: "rgba(255, 255, 255, .05)"
+            }}>
+                <Container>
+                    <h2>Currently in the works, follow me to see the progress:</h2>
 
+                    <DeveloperContact/>
+
+                </Container>
+            </div>
+        
             <Footer/>
         </div>
     );

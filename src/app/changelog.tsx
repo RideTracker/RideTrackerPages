@@ -32,6 +32,7 @@ export default function ChangelogPage() {
                             <li>Added activity visibility option to the upload page.</li>
                             <li>Added the ability to edit authored activities.</li>
                             <li>Added bike type images as default bike images and icons.</li>
+                            <li>Added bike model type and visibility to activity maps.</li>
                         </ul>
                     </div>
 

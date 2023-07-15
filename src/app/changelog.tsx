@@ -20,8 +20,25 @@ export default function ChangelogPage() {
                 <Container width={0.75}>
                     <h1>Changelog</h1>
 
-                    <div id="introduction">
-                        <h2>Version 0.9.0</h2>
+                    <div id="version-0.9.1">
+                        <a href="#version-0.9.1"><h2>Version 0.9.1 (under development)</h2></a>
+
+                        <p>Under development, below is the <i>finished</i> changes to date.</p>
+
+                        <ul>
+                            <li>Updated the prominent location permissions disclosure page.</li>
+                            <li>Fixed bug causing the feed to be shown before a user is authenticated.</li>
+                            <li>Added the ability to delete authored activities.</li>
+                            <li>Added activity visibility option to the upload page.</li>
+                            <li>Added the ability to edit authored activities.</li>
+                            <li>Added bike type images as default bike images and icons.</li>
+                        </ul>
+                    </div>
+
+                    <div id="version-0.9.0">
+                        <a href="#version-0.9.0"><h2>Version 0.9.0</h2></a>
+                    
+                        <p>Released 13th of July, 2023.</p>
 
                         <p>We have just released version 0.9.0 on the Google Play Store and it will gradually start showing up in the search results in the coming few days.</p>
                     

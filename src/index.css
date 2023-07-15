@@ -49,6 +49,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    line-height: 1.5em;
+}
+
 a:hover {
     text-decoration: underline;
 }

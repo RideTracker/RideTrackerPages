@@ -29,6 +29,7 @@ export default function ChangelogPage() {
                             <li>Fixed app name (ridetrackerapp &gt; RideTracker).</li>
                             <li>Added a prominent notice for when updates are available.</li>
                             <li>Added redirection to the avatar editor after registration.</li>
+                            <li>Added ability to comment on activities.</li>
                         </ul>
                     </div>
 

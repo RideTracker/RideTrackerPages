@@ -30,6 +30,7 @@ export default function ChangelogPage() {
                             <li>Added a prominent notice for when updates are available.</li>
                             <li>Added redirection to the avatar editor after registration.</li>
                             <li>Added ability to comment on activities.</li>
+                            <li>Added ability to delete authored comments.</li>
                         </ul>
                     </div>
 

@@ -31,6 +31,8 @@ export default function ChangelogPage() {
                             <li>Added redirection to the avatar editor after registration.</li>
                             <li>Added ability to comment on activities.</li>
                             <li>Added ability to delete authored comments.</li>
+                            <li>Updated activities list on profiles.</li>
+                            <li>Added followers and following tabs to user profile.</li>
                         </ul>
                     </div>
 

@@ -20,15 +20,17 @@ export default function ChangelogPage() {
                 <Container width={0.75}>
                     <h1>Changelog</h1>
 
-                    {/*<div id="version-0.9.2">
+                    <div id="version-0.9.2">
                         <a href="#version-0.9.2"><h2>Version 0.9.2 (under development)</h2></a>
 
                         <p>Under development, below is the <i>finished</i> changes to date.</p>
 
                         <ul>
-                            <li></li>
+                            <li>Fixed app name (ridetrackerapp &gt; RideTracker).</li>
+                            <li>Added a prominent notice for when updates are available.</li>
+                            <li>Added redirection to the avatar editor after registration.</li>
                         </ul>
-                    </div>*/}
+                    </div>
 
                     <div id="version-0.9.1">
                         <a href="#version-0.9.1"><h2>Version 0.9.1</h2></a>
@@ -43,7 +45,7 @@ export default function ChangelogPage() {
                             <li>Added the ability to edit authored activities.</li>
                             <li>Added bike type images as default bike images and icons.</li>
                             <li>Added bike model type and visibility to activity maps.</li>
-                            <li>Added route drawing mechanism with Google Maps linking.*</li>
+                            <li>Added route drawing mechanism with Google Maps linking. {"*"}</li>
                         </ul>
 
                         <small>* subscription based feature which won't be available until after the beta period.</small>

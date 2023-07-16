@@ -20,6 +20,8 @@ export default function PrivacyPolicyPage() {
                 <Container width={0.75}>
                     <h1>Privacy Policy</h1>
 
+                    <p>Last modified 15th of July, 2023.</p>
+
                     <ol>
                         <li><a href="#introduction">Introduction</a></li>
                         <li><a href="#information-we-collect">Information we collect</a></li>
@@ -30,8 +32,6 @@ export default function PrivacyPolicyPage() {
                         <li><a href="#privacy-policy-changes">Privacy Policy changes</a></li>
                         <li><a href="#contact-us">Contact us</a></li>
                     </ol>
-
-                    <p>Last modified 15th of July, 2023.</p>
 
                     <div id="introduction">
                         <h2>Introduction</h2>

@@ -20,10 +20,18 @@ export default function ChangelogPage() {
                 <Container width={0.75}>
                     <h1>Changelog</h1>
 
-                    <div id="version-0.9.2">
-                        <a href="#version-0.9.2"><h2>Version 0.9.2 (under development)</h2></a>
+                    {/*<div id="version-0.9.3">
+                        <a href="#version-0.9.3"><h2>Version 0.9.3 (under development)</h2></a>
 
                         <p>Under development, below is the <i>finished</i> changes to date.</p>
+
+                        <ul>
+                            <li>Fixed app name (ridetrackerapp &gt; RideTracker).</li>
+                        </ul>
+                    </div>*/}
+
+                    <div id="version-0.9.2">
+                        <a href="#version-0.9.2"><h2>Version 0.9.2</h2></a>
 
                         <ul>
                             <li>Fixed app name (ridetrackerapp &gt; RideTracker).</li>
@@ -33,7 +41,10 @@ export default function ChangelogPage() {
                             <li>Added ability to delete authored comments.</li>
                             <li>Updated activities list on profiles.</li>
                             <li>Added followers and following tabs to user profile.</li>
+                            <li>Added route browser, waypoints, and drawing functionality. *</li>
                         </ul>
+
+                        <small>* subscription based feature which won't be available until after the beta period.</small>
                     </div>
 
                     <div id="version-0.9.1">

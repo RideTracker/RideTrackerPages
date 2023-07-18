@@ -11,8 +11,6 @@ export default function Header({ children, style }: HeaderProps) {
             width: "100%",
             height: "100%",
 
-            gap: "2vh",
-
             ...style
         }}>
             <h1 style={{ margin: "0 auto", padding: "5vh 0" }}>

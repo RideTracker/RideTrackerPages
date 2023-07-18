@@ -7,17 +7,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function DeveloperContact() {
     return (
         <div style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "1em"
-        }}>
+            alignItems: "center"
+        }} className="developer-contact">
             <img alt="Nora Söderlund" src="/images/uploads/1678048199639.jpg" style={{
+                gridArea: "image",
+
                 width: "6.5em",
                 height: "6.5em",
 
                 aspectRatio: 400 / 400,
 
                 background: "rgba(255, 255, 255, .05)",
+
+                marginRight: "1em",
                 
                 borderStyle: "solid",
                 borderWidth: 7,
@@ -28,44 +30,44 @@ export default function DeveloperContact() {
                 boxSizing: "border-box"
             }}/>
 
-            <div>
-                <h2 style={{ marginTop: ".5em" }}>Nora Söderlund</h2>
+            <h2 style={{ gridArea: "name", margin: 0 }}>Nora Söderlund</h2>
 
-                <div style={{
+            <div className="developer-contact-links" style={{
+                gridArea: "links",
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "wrap", 
+                gap: "1em"
+            }}>
+                <a href="https://nora-soderlund.se/" target="_blank" style={{
                     display: "flex",
-                    flexDirection: "row",
-                    gap: "2em"
+                    gap: ".5em",
+                    alignItems: "center"
                 }}>
-                    <a href="https://nora-soderlund.se/" target="_blank" style={{
-                        display: "flex",
-                        gap: ".5em",
-                        alignItems: "center"
-                    }}>
-                        <FontAwesomeIcon icon={faLink} fontSize={24}/>
+                    <FontAwesomeIcon icon={faLink} fontSize={24}/>
 
-                        Website
-                    </a>
+                    Website
+                </a>
 
-                    <a href="https://www.linkedin.com/in/nora-soderlund/" target="_blank" style={{
-                        display: "flex",
-                        gap: ".5em",
-                        alignItems: "center"
-                    }}>
-                        <FontAwesomeIcon icon={faLinkedin} fontSize={24}/>
+                <a href="https://www.linkedin.com/in/nora-soderlund/" target="_blank" style={{
+                    display: "flex",
+                    gap: ".5em",
+                    alignItems: "center"
+                }}>
+                    <FontAwesomeIcon icon={faLinkedin} fontSize={24}/>
 
-                        LinkedIn
-                    </a>
+                    LinkedIn
+                </a>
 
-                    <a href="https://github.com/nora-soderlund/" target="_blank" style={{
-                        display: "flex",
-                        gap: ".5em",
-                        alignItems: "center"
-                    }}>
-                        <FontAwesomeIcon icon={faGithub} fontSize={24}/>
+                <a href="https://github.com/nora-soderlund/" target="_blank" style={{
+                    display: "flex",
+                    gap: ".5em",
+                    alignItems: "center"
+                }}>
+                    <FontAwesomeIcon icon={faGithub} fontSize={24}/>
 
-                        Github
-                    </a>
-                </div>
+                    Github
+                </a>
             </div>
         </div>
     );

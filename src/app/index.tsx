@@ -24,16 +24,27 @@ export default function IndexPage() {
                 <Header style={{
                     display: "grid",
                     
-                    gridTemplateRows: "auto 1fr auto"
+                    gridTemplateRows: "auto 1fr",
+
+                    position: "relative"
                 }}>
                     <div style={{
                         opacity: .95,
 
+                        marginBottom: "5vh",
+
                         display: "flex",
-                        justifyContent: "center"
+                        justifyContent: "center",
+
+                        position: "relative"
                     }}>
                         <div style={{
-                            position: "relative"
+                            position: "absolute",
+
+                            height: "100%",
+
+                            left: "50%",
+                            transform: "translateX(-50%)"
                         }}>
                             <div style={{
                                 position: "absolute",
@@ -41,7 +52,8 @@ export default function IndexPage() {
                                 top: "1em",
                                 height: "100%",
 
-                                transform: "translateX(-50%) rotateZ(-10deg)"
+                                transform: "rotateZ(-10deg)",
+                                zIndex: 1
                             }}>
                                 <ScreenshotImage image={"/images/2023/0.9.0/Screenshot_20230706_205751.jpg"}/>
                             </div>
@@ -52,34 +64,30 @@ export default function IndexPage() {
                                 top: "1em",
                                 height: "100%",
 
-                                transform: "translateX(-50%) rotateZ(10deg)"
+                                transform: "rotateZ(10deg)",
+                                zIndex: 2
                             }}>
                                 <ScreenshotImage image={"/images/2023/0.9.0/Screenshot_20230706_205957.jpg"}/>
                             </div>
 
                             <div style={{
-                                position: "absolute",
-                                left: 0,
                                 height: "100%",
-
-                                transform: "translateX(-50%)"
+                                position: "relative",
+                                zIndex: 3
                             }}>
                                 <ScreenshotImage image={"/images/2023/0.9.0/Screenshot_20230706_205804.jpg"}/>
                             </div>
                         </div>
                     </div>
-
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "flex-end"
-                    }}>
-                        <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank">
-                            <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
-                                height: "8vh"
-                            }}/>
-                        </a>
-                    </div>
                 </Header>
+
+                <Container style={{ padding: "0", display: "flex", transform: "translateY(-100%)" }}>
+                    <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank" style={{ marginLeft: "auto" }}>
+                        <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
+                            height: "8vh"
+                        }}/>
+                    </a>
+                </Container>
             </div>
 
             <div style={{
@@ -89,7 +97,6 @@ export default function IndexPage() {
                     <h2>Currently in the works, follow me to see the progress:</h2>
 
                     <DeveloperContact/>
-
                 </Container>
             </div>
         

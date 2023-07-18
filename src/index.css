@@ -12,13 +12,32 @@
     }
 }
 
+.developer-contact {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "image name"
+                            "image links";
+}
+
 @media only screen and (max-width: 1100px) {
+    .developer-contact {
+        row-gap: 1em;
+
+        grid-template-areas: "image name"
+                                "links links";
+    }
+
+    .developer-contact-links {
+        justify-content: space-between;
+    }
+
     .footer {
         flex-direction: column;
     }
 
     .footer-links {
-        justify-content: flex-start !important;
+        justify-content: space-around !important;
     }
 }
 

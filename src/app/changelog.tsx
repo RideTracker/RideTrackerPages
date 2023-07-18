@@ -33,6 +33,8 @@ export default function ChangelogPage() {
                     <div id="version-0.9.2">
                         <a href="#version-0.9.2"><h2>Version 0.9.2</h2></a>
 
+                        <p>Released 18th of July, 2023.</p>
+
                         <ul>
                             <li>Fixed app name (ridetrackerapp &gt; RideTracker).</li>
                             <li>Added a prominent notice for when updates are available.</li>

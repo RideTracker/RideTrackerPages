@@ -28,6 +28,7 @@ export default function ChangelogPage() {
                         <ul>
                             <li>Fixed bug causing details to not save from the upload page.</li>
                             <li>Fixed bug with using the app while offline.</li>
+                            <li>Fixed bug causing activity map locations not to show.</li>
                         </ul>
                     </div>
 

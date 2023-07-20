@@ -20,15 +20,16 @@ export default function ChangelogPage() {
                 <Container width={0.75}>
                     <h1>Changelog</h1>
 
-                    {/*<div id="version-0.9.3">
+                    <div id="version-0.9.3">
                         <a href="#version-0.9.3"><h2>Version 0.9.3 (under development)</h2></a>
 
                         <p>Under development, below is the <i>finished</i> changes to date.</p>
 
                         <ul>
-                            <li>Fixed app name (ridetrackerapp &gt; RideTracker).</li>
+                            <li>Fixed bug causing details to not save from the upload page.</li>
+                            <li>Fixed bug with using the app while offline.</li>
                         </ul>
-                    </div>*/}
+                    </div>
 
                     <div id="version-0.9.2">
                         <a href="#version-0.9.2"><h2>Version 0.9.2</h2></a>

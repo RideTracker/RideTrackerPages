@@ -31,6 +31,7 @@ export default function ChangelogPage() {
                             <li>Fixed bug causing activity map locations not to show.</li>
                             <li>Added map analytics with speed and elevation gradient insights. *</li>
                             <li>Added graph analytics with speed, elevation, and battery insights. *</li>
+                            <li>Added white outline to route polylines.</li>
                         </ul>
 
                         <small>* subscription based feature which won't be available until after the beta period.</small>

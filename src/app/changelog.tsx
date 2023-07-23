@@ -32,6 +32,7 @@ export default function ChangelogPage() {
                             <li>Added map analytics with speed and elevation gradient insights. *</li>
                             <li>Added graph analytics with speed, elevation, and battery insights. *</li>
                             <li>Added white outline to route polylines.</li>
+                            <li>Added a new colorful index page.</li>
                         </ul>
 
                         <small>* subscription based feature which won't be available until after the beta period.</small>

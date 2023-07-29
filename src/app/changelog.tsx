@@ -20,6 +20,21 @@ export default function ChangelogPage() {
                 <Container width={0.75}>
                     <h1>Changelog</h1>
 
+                    <div id="wearable-version-0.9.0">
+                        <a href="#wearable-version-0.9.0"><h2>Wearable Version 0.9.0 (under development)</h2></a>
+
+                        <p>Wearable is the short identifier for RideTracker's Wear OS (Samsung Gear) app. This app is under development, below is the <i>finished</i> changes to date.</p>
+
+                        <ul>
+                            <li>Added a Google Maps main screen with session polylines and markers.</li>
+                            <li>Added a secondary statistics screen with elevation, speed, and distance counters.</li>
+                            <li>Added a digital clock and session timer at the top of the screens.</li>
+                            <li>Added a Google Maps traffic highlight button.</li>
+                        </ul>
+
+                        <p>The Wearable app and all of its features will be free, however, activities will only be interactable on the RideTracker app.</p>
+                    </div>
+
                     <div id="version-0.9.3">
                         <a href="#version-0.9.3"><h2>Version 0.9.3 (under development)</h2></a>
 

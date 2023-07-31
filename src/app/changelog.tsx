@@ -53,8 +53,11 @@ export default function ChangelogPage() {
                                 <li>Changed default theme to dark for new users.</li>
                                 <li>Added connected wearable devices page to user settings. **</li>
                                 <li>Added maximum zoom level to activity maps.</li>
+                                <li>Background optimizations to the feed page.</li>
                             </ul>
+
                             <small>* subscription based feature which won't be available until after the beta period.</small><br/>
+                            
                             <small>** feature related to wearable which won't be available until <a href="#wearable-version-0.9.0">Wearable Version 0.9.0</a>.</small>
                         </div>
 

@@ -46,7 +46,7 @@ export default function ChangelogPage() {
                             <li>Fixed bug causing activity map locations not to show.</li>
                             <li>Added map analytics with speed and elevation gradient insights. *</li>
                             <li>Added graph analytics with speed, elevation, and battery insights. *</li>
-                            <li>Added white outline to route polylines.</li>
+                            <li>Added dark outline to route polylines.</li>
                             <li>Refactored index, login, and registration pages.</li>
                             <li>Changed default theme to dark for new users.</li>
                         </ul>

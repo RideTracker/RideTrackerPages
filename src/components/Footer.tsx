@@ -29,7 +29,7 @@ export default function Footer() {
                         flexDirection: "column",
                         gap: ".5em"
                     }}>
-                        <p style={{ color: "#BB87FC" }}>Links</p>
+                        <p style={{ color: "#BB87FC" }}>About</p>
 
                         <a href="/contact">Contact</a>
                         <a href="/changelog">Changelog</a>

@@ -54,6 +54,8 @@ export default function ChangelogPage() {
                                 <li>Added connected wearable devices page to user settings. **</li>
                                 <li>Added maximum zoom level to activity maps.</li>
                                 <li>Background optimizations to the feed page.</li>
+                                <li>Fixed navigation and tab bar colors.</li>
+                                <li>Fixed bug with the tab bar not reappearing after an activity.</li>
                             </ul>
 
                             <small>* subscription based feature which won't be available until after the beta period.</small><br/>

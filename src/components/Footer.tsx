@@ -13,6 +13,14 @@ export default function Footer() {
                     justifyContent: "flex-end",
                     gap: "1em"
                 }} className="footer-links">
+                    <div style={{ margin: "auto auto auto 0" }}>
+                        <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank">
+                            <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
+                                height: "8vh"
+                            }}/>
+                        </a>
+                    </div>
+
                     <div style={{
                         display: "flex",
                         flexDirection: "column",

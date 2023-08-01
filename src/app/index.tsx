@@ -85,6 +85,11 @@ const sections: ScreenshotScrollerSection[] = [
                     {
                         alt: "Global routes",
                         source: "./images/screenshots/Screenshot_20230731_231307_Expo Go.jpg"
+                    },
+
+                    {
+                        alt: "Activity insights",
+                        source: "./images/screenshots/Screenshot_20230731_231013_Expo Go.jpg"
                     }
                 ]
             },

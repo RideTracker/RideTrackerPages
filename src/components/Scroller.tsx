@@ -70,7 +70,8 @@ export default function Scroller({ sections }: ScrollerProps) {
 
             <div className="scroller-content" style={{
                 display: "flex",
-                flexDirection: "row"
+                flexDirection: "row",
+                pointerEvents: "none"
             }}>
                 <div style={{ position: "relative", width: "60%", backgroundColor: "rgba(0, 0, 0, .1)" }}>
                     <div style={{ position: "sticky", top: 0, display: "inline-block", width: "100%" }}>

@@ -38,7 +38,7 @@ export default function ScreenshotScroller({ sections, fraction }: ScreenshotScr
 
                 position: "relative",
 
-                gap: "5vh"
+                gap: "1em"
             }}>
                 <ScreenshotCollection style={{ transform: `translateY(${fraction * 100}%)`, alignSelf: "flex-end" }}>
                     {[...sections].reverse().flatMap((section, index) => [ ...section.columns[0].images ].reverse().map((image) => (

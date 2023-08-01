@@ -11,7 +11,7 @@ export function ScreenshotCollection({ style, children }: ScreenshotCollectionPr
             display: "flex",
             flexDirection: "column",
         
-            gap: "5vh",
+            gap: "1em",
 
             position: "relative",
 

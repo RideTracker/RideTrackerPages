@@ -36,33 +36,12 @@ export default function Scroller({ sections }: ScrollerProps) {
     }, []);
 
     return (
-        <div ref={divRef} style={{
+        <div ref={divRef} className="scroller-container" style={{
             width: "100%",
 
             position: "relative"
         }}>
-            <div style={{
-                display: "flex",
-                flexDirection: "row"
-            }}>
-                <div style={{ position: "relative", width: "60%", backgroundColor: "rgba(0, 0, 0, .1)" }}>
-                    <div style={{ position: "sticky", top: 0, display: "inline-block", width: "100%" }}>
-                    </div>
-                </div>
-
-                <div style={{ flex: 1 }}>
-                    <div style={{
-                        backgroundColor: "rgba(0, 0, 0, .25)",
-                        
-                        height: `${(sections.length * 100) * 2}vh`,
-                        width: "100%"
-                    }}>
-                        <ScreenshotScroller sections={sections} fraction={fraction}/>
-                    </div>
-                </div>
-            </div>
-
-            <div style={{
+            <div className="scroller-intro" style={{
                 position: "absolute",
 
                 left: 0,
@@ -86,6 +65,27 @@ export default function Scroller({ sections }: ScrollerProps) {
                     <Container style={{ alignItems: "center" }}>
                         <AnimatableLogo/>
                     </Container>
+                </div>
+            </div>
+
+            <div className="scroller-content" style={{
+                display: "flex",
+                flexDirection: "row"
+            }}>
+                <div style={{ position: "relative", width: "60%", backgroundColor: "rgba(0, 0, 0, .1)" }}>
+                    <div style={{ position: "sticky", top: 0, display: "inline-block", width: "100%" }}>
+                    </div>
+                </div>
+
+                <div style={{ flex: 1 }}>
+                    <div style={{
+                        backgroundColor: "rgba(0, 0, 0, .25)",
+                        
+                        height: `${(sections.length * 100) * 2}vh`,
+                        width: "100%"
+                    }}>
+                        <ScreenshotScroller sections={sections} fraction={fraction}/>
+                    </div>
                 </div>
             </div>
         </div>

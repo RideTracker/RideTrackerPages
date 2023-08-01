@@ -91,6 +91,18 @@
     .footer-links {
         justify-content: space-around !important;
     }
+
+    .scroller-container {
+        flex-direction: column !important;
+    }
+    
+    .scroller-intro {
+        position: relative !important;
+    }
+    
+    .scroller-content {
+        display: none !important;
+    }
 }
 
 html, body, #root {

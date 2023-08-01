@@ -16,15 +16,17 @@ export type ScreenshotScrollerSection = {
 export type ScreenshotScrollerProps = {
     sections: ScreenshotScrollerSection[];
     fraction: number;
+    circle?: boolean;
+    height?: number;
 };
 
-export default function ScreenshotScroller({ sections, fraction }: ScreenshotScrollerProps) {
+export default function ScreenshotScroller({ sections, fraction, circle, height = 100 }: ScreenshotScrollerProps) {
     return (
         <div style={{
             position: "sticky",
             top: 0,
 
-            height: "100vh",
+            height: `${height}vh`,
 
             overflow: "hidden"
         }}>
@@ -42,19 +44,19 @@ export default function ScreenshotScroller({ sections, fraction }: ScreenshotScr
             }}>
                 <ScreenshotCollection style={{ transform: `translateY(${fraction * 100}%)`, alignSelf: "flex-end" }}>
                     {[...sections].reverse().flatMap((section, index) => [ ...section.columns[0].images ].reverse().map((image) => (
-                        <ScreenshotImage key={index + image.alt} source={image.source} alt={image.alt}/>
+                        <ScreenshotImage key={index + image.alt} source={image.source} alt={image.alt} style={(circle)?({ borderRadius: "50%" }):(undefined)}/>
                     )))}
                 </ScreenshotCollection>
                 
                 <ScreenshotCollection style={{ transform: `translateY(-${fraction * 100}%)`, alignSelf: "flex-start" }}>
                     {sections.flatMap((section, index) => section.columns[1].images.map((image) => (
-                        <ScreenshotImage key={index + image.alt} source={image.source} alt={image.alt}/>
+                        <ScreenshotImage key={index + image.alt} source={image.source} alt={image.alt} style={(circle)?({ borderRadius: "50%" }):(undefined)}/>
                     )))}
                 </ScreenshotCollection>
                 
                 <ScreenshotCollection style={{ transform: `translateY(${fraction * 100}%)`, alignSelf: "flex-end" }}>
                     {[...sections].reverse().flatMap((section, index) => [ ...section.columns[2].images ].reverse().map((image) => (
-                        <ScreenshotImage key={index + image.alt} source={image.source} alt={image.alt}/>
+                        <ScreenshotImage key={index + image.alt} source={image.source} alt={image.alt} style={(circle)?({ borderRadius: "50%" }):(undefined)}/>
                     )))}
                 </ScreenshotCollection>
             </div>

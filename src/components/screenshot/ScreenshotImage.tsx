@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, CSSProperties } from "react";
 
 export type ScreenshotImageProps = {
     alt: string;
     source: string;
     onLoad?: () => void;
+    style?: CSSProperties;
 };
 
-export function ScreenshotImage({ alt, source }: ScreenshotImageProps) {
+export function ScreenshotImage({ alt, source, style }: ScreenshotImageProps) {
     const [ imageLoaded, setImageLoaded ] = useState<boolean>(false);
 
     return (
@@ -18,7 +19,8 @@ export function ScreenshotImage({ alt, source }: ScreenshotImageProps) {
 
             background: "#171A23",
 
-            overflow: "hidden"
+            overflow: "hidden",
+            ...style
         }}>
             <img alt={alt} src={source} className={(imageLoaded)?("fade-and-blur-in"):(undefined)} onLoad={() => setImageLoaded(true)} style={{
                 opacity: 0,

@@ -82,7 +82,7 @@ export default function Scroller({ sections }: ScrollerProps) {
                     <div style={{
                         backgroundColor: "rgba(0, 0, 0, .25)",
                         
-                        height: `${(sections.length * 100) * 2}vh`,
+                        height: `${sections.map((section) => section.columns[0].images.length).reduce((accumulated, current) => accumulated + current, 0) * 100}vh`,
                         width: "100%"
                     }}>
                         <ScreenshotScroller sections={sections} fraction={fraction}/>

@@ -66,11 +66,6 @@ const sections: ScreenshotScrollerSection[] = [
                     {
                         alt: "My routes",
                         source: "./images/screenshots/Screenshot_20230731_231331_Expo Go.jpg"
-                    },
-
-                    {
-                        alt: "Route drawing",
-                        source: "./images/screenshots/Screenshot_20230731_231322_Expo Go.jpg"
                     }
                 ]
             },
@@ -85,11 +80,6 @@ const sections: ScreenshotScrollerSection[] = [
                     {
                         alt: "Global routes",
                         source: "./images/screenshots/Screenshot_20230731_231307_Expo Go.jpg"
-                    },
-
-                    {
-                        alt: "Activity insights",
-                        source: "./images/screenshots/Screenshot_20230731_231013_Expo Go.jpg"
                     }
                 ]
             },
@@ -99,11 +89,6 @@ const sections: ScreenshotScrollerSection[] = [
                     {
                         alt: "Finish recording",
                         source: "./images/screenshots/Screenshot_20230731_231625_Expo Go.jpg"
-                    },
-
-                    {
-                        alt: "Avatar editor head",
-                        source: "./images/screenshots/Screenshot_20230731_231844_Expo Go.jpg"
                     }
                 ]
             }

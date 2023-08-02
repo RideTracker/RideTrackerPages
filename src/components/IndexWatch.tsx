@@ -135,15 +135,39 @@ export default function WearableScroller() {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
-                    alignItems: "center"
+                    alignItems: "center",
+
+                    padding: "0 2.5vw",
+                    boxSizing: "border-box"
                 }}>
                     <h2 style={{
-                        textTransform: "uppercase",
-                        fontSize: "4em",
-                        transform: "rotate(25deg)"
-                    }}>
-                        Coming soon!
+                        fontSize: "2.5vw",
+                        color: "#BB87FC",
+                        animationDelay: `-${fraction}s`
+                    }} className="animated-wearable-title">
+                        Record your rides on your Android Wear device!
                     </h2>
+
+                    <div style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "1em"
+                    }}>
+                        <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${fraction}s` }}>
+                            <h3>Going on a quick ride? Leave your phone at home!</h3>
+
+                            <p>With the RideTracker app for Android Wear, you get the same features on your smart watch as you get on the RideTracker app for Android!</p>
+                            <p>All you have to do is hit the record button and smash some records!</p>
+                        </div>
+                        
+                        <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${fraction}s` }}>
+                            <h3>Keep track of your stats while remaining safe!</h3>
+
+                            <p>Have an overview of the traffic in your area, your speed, accumulated distace, elevation gain, and much more without having to look at your phone!</p>
+                            
+                            <p style={{ color: "#BB87FC" }}>RideTracker for Android Wear is coming soon to the Play Store!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

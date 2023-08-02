@@ -4,14 +4,16 @@ export type ScreenshotImageProps = {
     alt: string;
     source: string;
     onLoad?: () => void;
+
+    className?: string;
     style?: CSSProperties;
 };
 
-export function ScreenshotImage({ alt, source, style }: ScreenshotImageProps) {
+export function ScreenshotImage({ alt, source, style, className }: ScreenshotImageProps) {
     const [ imageLoaded, setImageLoaded ] = useState<boolean>(false);
 
     return (
-        <div style={{
+        <div className={className} style={{
             borderStyle: "solid",
             borderWidth: "1em",
             borderColor: "rgba(0, 0, 0, .2)",

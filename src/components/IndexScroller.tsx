@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import ScreenshotScroller, { ScreenshotScrollerSection } from "./screenshot/ScreenshotScroller";
 import Container from "./Container";
 import AnimatableLogo from "./AnimatableLogo";
+import useScrollFraction from "../modules/useScrollFraction";
 
 const sections: ScreenshotScrollerSection[] = [
     {
@@ -138,29 +139,8 @@ const sections: ScreenshotScrollerSection[] = [
 
 export default function IndexScroller() {
     const divRef = useRef<HTMLDivElement>(null);
-
-    const [ fraction, setFraction ] = useState<number>(0);
-
-    useEffect(() => {
-        const onScroll = () => {
-            if(!divRef.current)
-                return;
-
-            const bounds = divRef.current.getBoundingClientRect();
-
-            if((window.scrollY - divRef.current.offsetTop) < 0)
-                return;
-
-            if(window.scrollY - divRef.current.offsetTop > (bounds.height))
-                return;
-
-            setFraction(((window.scrollY - divRef.current.offsetTop) / bounds.height));
-        };
-
-        window.addEventListener("scroll", onScroll);
     
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+    const fraction = useScrollFraction(divRef);
 
     return (
         <div ref={divRef} className="scroller-container" style={{

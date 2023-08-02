@@ -139,3 +139,97 @@ li {
 a:hover {
     text-decoration: underline;
 }
+
+@keyframes slide-left-to-right {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-top-to-bottom {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right-to-left {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-bottom-to-top {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-blur {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.animated-wearable {
+    animation-play-state: paused;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animated-wearable-column-1 {
+    animation-name: slide-left-to-right;
+}
+
+.animated-wearable-column-2:nth-child(1) {
+    animation-name: slide-top-to-bottom;
+}
+
+.animated-wearable-column-2:nth-child(2) {
+    animation-name: fade-in-blur;
+}
+
+.animated-wearable-column-2:nth-child(3) {
+    animation-name: slide-bottom-to-top;
+}
+
+.animated-wearable-column-3 {
+    animation-name: slide-right-to-left;
+}

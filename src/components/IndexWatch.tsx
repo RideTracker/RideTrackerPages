@@ -2,6 +2,9 @@ import React, { useRef, useEffect, useState } from "react";
 import ScreenshotScroller, { ScreenshotScrollerSection } from "./screenshot/ScreenshotScroller";
 import Container from "./Container";
 import AnimatableLogo from "./AnimatableLogo";
+import useVisibleFraction from "../modules/useVisibleFraction";
+import { ScreenshotImage } from "./screenshot/ScreenshotImage";
+import { ScreenshotCollection } from "./screenshot/ScreenshotCollection";
 
 const sections: ScreenshotScrollerSection[] = [
     {
@@ -29,8 +32,8 @@ const sections: ScreenshotScrollerSection[] = [
             {
                 images: [
                     {
-                        alt: "Not recording, traffic",
-                        source: "./images/screenshots/wearable/Screenshot_20230801_205244.png"
+                        alt: "Recording, map",
+                        source: "./images/screenshots/wearable/Screenshot_20230801_205440.png"
                     },
 
                     {
@@ -39,8 +42,8 @@ const sections: ScreenshotScrollerSection[] = [
                     },
 
                     {
-                        alt: "Recording, map",
-                        source: "./images/screenshots/wearable/Screenshot_20230801_205440.png"
+                        alt: "Not recording, traffic",
+                        source: "./images/screenshots/wearable/Screenshot_20230801_205244.png"
                     }
                 ]
             },
@@ -68,13 +71,17 @@ const sections: ScreenshotScrollerSection[] = [
 ];
 
 export default function WearableScroller() {
-    return (
-        <div className="scroller-container" style={{
-            width: "100%",
+    const divRef = useRef<HTMLDivElement>(null);
 
-            position: "relative"
+    const fraction = useVisibleFraction(divRef, 1.25);
+    
+    console.log({ fraction });
+
+    return (
+        <div ref={divRef} className="scroller-container" style={{
+            width: "100%"
         }}>
-            <div className="scroller-content" style={{
+            <div style={{
                 display: "flex",
                 flexDirection: "row",
                 pointerEvents: "none"
@@ -86,13 +93,50 @@ export default function WearableScroller() {
                         height: `75vh`,
                         width: "100%",
 
+                        display: "flex",
+                        alignItems: "center",
+
                         overflow: "hidden"
                     }}>
-                        <ScreenshotScroller height={75} sections={sections} fraction={0} circle={true}/>
+                        <div style={{
+                            display: "flex",
+
+                            justifyContent: "center",
+                            alignItems: "center",
+
+                            transform: "rotate(25deg)"
+                        }}>
+                            <ScreenshotCollection>
+                                {[...sections].reverse().flatMap((section, index) => [ ...section.columns[0].images ].reverse().map((image) => (
+                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-1`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${fraction}s`, borderRadius: "50%" }}/>
+                                )))}
+                            </ScreenshotCollection>
+                            
+                            <ScreenshotCollection>
+                                {sections.flatMap((section, index) => section.columns[1].images.map((image) => (
+                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-2`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${fraction}s`, borderRadius: "50%" }}/>
+                                )))}
+                            </ScreenshotCollection>
+                            
+                            <ScreenshotCollection>
+                                {[...sections].reverse().flatMap((section, index) => [ ...section.columns[2].images ].reverse().map((image) => (
+                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-3`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${fraction}s`, borderRadius: "50%" }}/>
+                                )))}
+                            </ScreenshotCollection>
+                        </div>
                     </div>
                 </div>
 
-                <div style={{ position: "relative", width: "60%", backgroundColor: "rgba(0, 0, 0, .15)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                <div style={{
+                    width: "60%",
+                    
+                    backgroundColor: "rgba(0, 0, 0, .15)",
+                    
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}>
                     <h2 style={{
                         textTransform: "uppercase",
                         fontSize: "4em",

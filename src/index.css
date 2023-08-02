@@ -143,13 +143,11 @@ a:hover {
 @keyframes slide-left-to-right {
     from {
         opacity: 0;
-        filter: blur(10px);
         transform: translateX(-100%);
     }
 
     to {
         opacity: 1;
-        filter: blur(0);
         transform: translateX(0);
     }
 }
@@ -157,13 +155,11 @@ a:hover {
 @keyframes slide-top-to-bottom {
     from {
         opacity: 0;
-        filter: blur(10px);
         transform: translateY(-100%);
     }
 
     to {
         opacity: 1;
-        filter: blur(0);
         transform: translateY(0);
     }
 }
@@ -171,13 +167,11 @@ a:hover {
 @keyframes slide-right-to-left {
     from {
         opacity: 0;
-        filter: blur(10px);
         transform: translateX(100%);
     }
 
     to {
         opacity: 1;
-        filter: blur(0);
         transform: translateX(0);
     }
 }
@@ -185,26 +179,12 @@ a:hover {
 @keyframes slide-bottom-to-top {
     from {
         opacity: 0;
-        filter: blur(10px);
         transform: translateY(100%);
     }
 
     to {
         opacity: 1;
-        filter: blur(0);
         transform: translateY(0);
-    }
-}
-
-@keyframes fade-in-blur {
-    from {
-        opacity: 0;
-        filter: blur(10px);
-    }
-
-    to {
-        opacity: 1;
-        filter: blur(0);
     }
 }
 
@@ -223,7 +203,7 @@ a:hover {
 }
 
 .animated-wearable-column-2:nth-child(2) {
-    animation-name: fade-in-blur;
+    animation-name: fade-in-animation;
 }
 
 .animated-wearable-column-2:nth-child(3) {

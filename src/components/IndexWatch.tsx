@@ -83,8 +83,7 @@ export default function WearableScroller() {
         }}>
             <div style={{
                 display: "flex",
-                flexDirection: "row",
-                pointerEvents: "none"
+                flexDirection: "row"
             }}>
                 <div style={{ flex: 1 }}>
                     <div style={{

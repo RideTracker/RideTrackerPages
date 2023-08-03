@@ -15,11 +15,15 @@ export function ScreenshotImage({ alt, source, style, className }: ScreenshotIma
     return (
         <div className={className} style={{
             borderStyle: "solid",
-            borderWidth: "1em",
-            borderColor: "rgba(0, 0, 0, .2)",
+            borderWidth: ".5em",
+            borderColor: "rgba(0, 0, 0, .5)",
             borderRadius: "3em",
 
             background: "#171A23",
+
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
 
             overflow: "hidden",
             ...style
@@ -27,7 +31,10 @@ export function ScreenshotImage({ alt, source, style, className }: ScreenshotIma
             <img alt={alt} src={source} className={(imageLoaded)?("fade-and-blur-in"):(undefined)} onLoad={() => setImageLoaded(true)} style={{
                 opacity: 0,
 
-                width: "100%"
+                width: "100%",
+                height: "100%",
+
+                objectFit: "contain"
             }}/>
         </div>
     );

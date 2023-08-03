@@ -168,7 +168,9 @@ export default function IndexScroller() {
 
                         flexDirection: "column"
                     }}>
-                        <AnimatableLogo/>
+                        <AnimatableLogo styles={{
+                            width: "30vw"
+                        }}/>
                     </div>
                 </div>
 

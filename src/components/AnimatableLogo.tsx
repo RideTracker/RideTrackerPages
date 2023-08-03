@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { CSSProperties, useState } from "react";
 
-export default function AnimatableLogo() {
+export type AnimatiableLogoProps = {
+    styles?: CSSProperties;
+}
+
+export default function AnimatableLogo({ styles }: AnimatiableLogoProps) {
     const [ imageLoaded, setImageLoaded ] = useState<boolean>(false);
 
     return (
@@ -16,13 +20,16 @@ export default function AnimatableLogo() {
 
                     opacity: 0,
 
-                    aspectRatio: 1733 / 234
+                    aspectRatio: 1733 / 234,
+
+                    ...styles
                 }} onLoad={() => setImageLoaded(true)}/>
 
                 <svg viewBox="0 0 72 7" style={{
                     width: "20em",
                     maxWidth: "80vw",
-                    opacity: 0
+                    opacity: 0,
+                    ...styles
                 }} className={(imageLoaded)?("rotate-bottom-to-top"):(undefined)}>
                     <text x="0" y="4.6" fontSize={2.4} style={{
                         fill: "#FFF"

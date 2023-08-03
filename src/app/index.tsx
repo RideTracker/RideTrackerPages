@@ -10,23 +10,26 @@ import Header from "../components/Header";
 import ScreenshotScroller, { ScreenshotScrollerSection } from "../components/screenshot/ScreenshotScroller";
 import IndexScroller from "../components/IndexScroller";
 import IndexWatch from "../components/IndexWatch";
+import IndexAvatars from "../components/IndexAvatars";
 
 export default function IndexPage() {
     return (
         <React.Fragment>
             <IndexScroller/>
-
-            <div style={{
-                backgroundColor: "rgba(255, 255, 255, .05)"
-            }}>
-                <Container>
-                    <h2>Currently in the works, follow me to see the progress:</h2>
-
-                    <DeveloperContact/>
-                </Container>
-            </div>
             
             <IndexWatch/>
+
+            <IndexAvatars/>
+
+<div style={{
+    backgroundColor: "rgba(255, 255, 255, .05)"
+}}>
+    <Container>
+        <h2>Currently in the works, follow me to see the progress:</h2>
+
+        <DeveloperContact/>
+    </Container>
+</div>
         
             <Footer/>
         </React.Fragment>

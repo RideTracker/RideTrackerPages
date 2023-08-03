@@ -10,6 +10,8 @@ export function ScreenshotCollection({ style, children }: ScreenshotCollectionPr
         <div style={{
             display: "flex",
             flexDirection: "column",
+
+            flex: 1,
         
             gap: "1em",
 

@@ -13,8 +13,8 @@ const sections: ScreenshotScrollerSection[] = [
             {
                 images: [
                     {
-                        alt: "Verifying login",
-                        source: "./images/avatars/avatar-2.png"
+                        alt: "Recording, map",
+                        source: "./images/avatars/avatar-4.png"
                     },
 
                     {
@@ -32,8 +32,8 @@ const sections: ScreenshotScrollerSection[] = [
             {
                 images: [
                     {
-                        alt: "Recording, map",
-                        source: "./images/avatars/avatar-4.png"
+                        alt: "Verifying login",
+                        source: "./images/avatars/avatar-2.png"
                     },
 
                     {
@@ -56,13 +56,13 @@ const sections: ScreenshotScrollerSection[] = [
                     },
 
                     {
-                        alt: "Recording, map, 2",
-                        source: "./images/avatars/avatar-6.png"
+                        alt: "Finished",
+                        source: "./images/avatars/avatar-8.png"
                     },
 
                     {
-                        alt: "Finished",
-                        source: "./images/avatars/avatar-8.png"
+                        alt: "Recording, map, 2",
+                        source: "./images/avatars/avatar-6.png"
                     }
                 ]
             }

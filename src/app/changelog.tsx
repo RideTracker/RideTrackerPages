@@ -56,6 +56,7 @@ export default function ChangelogPage() {
                                 <li>Background optimizations to the feed page.</li>
                                 <li>Fixed navigation and tab bar colors.</li>
                                 <li>Fixed bug with the tab bar not reappearing after an activity.</li>
+                                <li>Fixed bug causing recordings footer not updating.</li>
                             </ul>
 
                             <small>* subscription based feature which won't be available until after the beta period.</small><br/>

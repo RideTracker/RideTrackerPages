@@ -16,8 +16,8 @@ export function ScreenshotImage({ alt, source, style, className }: ScreenshotIma
         <div className={className} style={{
             borderStyle: "solid",
             borderWidth: ".5em",
-            borderColor: "rgba(0, 0, 0, .5)",
-            borderRadius: "3em",
+            borderColor: "rgba(0, 0, 0, .25)",
+            borderRadius: "1.5em",
 
             background: "#171A23",
 

@@ -37,10 +37,24 @@ export default function ChangelogPage() {
                             <p>The Wearable app and all of its features will be free, however, activities will only be interactable on the RideTracker app.</p>
                         </div>
 
-                        <div id="version-0.9.3">
-                            <a href="#version-0.9.3"><h2>Version 0.9.3 (under development)</h2></a>
+                        <div/>
 
-                            <p>Under development, below is the <i>finished</i> changes to date.</p>
+                        <div id="version-0.9.3-patch1">
+                            <a href="#version-0.9.3-patch1"><h2>Version 0.9.3-patch1</h2></a>
+
+                            <p>Patched 9th of August, 2023.</p>
+
+                            <ul>
+                                <li>Immediate fix to recording and uploading activities.</li>
+                            </ul>
+
+                            <p>This was triggered by an issue caused in <a href="#version-0.9.3">Version 0.9.3</a> where we've changed the structure of how we store coordinates, altitudes, speeds, and more data, for future implementations of <a href="#wearable-version-0.9.0">Wearable Version 0.9.0</a> and the RideTracker app.</p>
+                        </div>
+
+                        <div id="version-0.9.3">
+                            <a href="#version-0.9.3"><h2>Version 0.9.3</h2></a>
+
+                            <p>Released 9th of August, 2023.</p>
 
                             <ul>
                                 <li>Fixed bug causing details to not save from the upload page.</li>
@@ -63,8 +77,6 @@ export default function ChangelogPage() {
                             
                             <small>** feature related to wearable which won't be available until <a href="#wearable-version-0.9.0">Wearable Version 0.9.0</a>.</small>
                         </div>
-
-                        <div/>
 
                         <div id="version-0.9.2">
                             <a href="#version-0.9.2"><h2>Version 0.9.2</h2></a>

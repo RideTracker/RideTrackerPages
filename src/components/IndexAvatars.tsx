@@ -85,7 +85,7 @@ export default function IndexAvatars() {
                 display: "flex",
                 flexDirection: "row"
             }}>
-                <div style={{
+                <div className="view-grid-content" style={{
                     width: "60%",
                     
                     backgroundColor: "rgba(0, 0, 0, .15)",
@@ -110,7 +110,7 @@ export default function IndexAvatars() {
                         display: "flex",
                         flexDirection: "row",
                         gap: "1em"
-                    }}>
+                    }} className="view-grid-texts">
                         <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${fraction}s` }}>
                             <h3>We are a community!</h3>
 
@@ -128,7 +128,7 @@ export default function IndexAvatars() {
                     </div>
                 </div>
 
-                <div style={{ flex: 1 }}>
+                <div className="view-grid-images" style={{ flex: 1 }}>
                     <div style={{
                         backgroundColor: "rgba(0, 0, 0, .25)",
                         

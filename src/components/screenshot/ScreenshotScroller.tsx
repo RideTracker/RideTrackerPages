@@ -40,7 +40,8 @@ export default function ScreenshotScroller({ sections, fraction, circle, height 
 
                 position: "relative",
 
-                gap: "1em"
+                justifyContent: "space-between",
+                alignItems: "center"
             }}>
                 <ScreenshotCollection style={{ transform: `translateY(${fraction * 100}%)`, alignSelf: "flex-end" }}>
                     {[...sections].reverse().flatMap((section, index) => [ ...section.columns[0].images ].reverse().map((image) => (

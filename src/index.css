@@ -101,7 +101,30 @@
     }
     
     .scroller-content {
-        display: none !important;
+        flex-direction: column !important;
+    }
+
+    .scroller-content > div {
+        width: 100% !important;
+
+        font-size: 3em !important;
+    }
+
+    .scroller-content .animatable-logo img,
+    .scroller-content .animatable-logo svg {
+        width: 80vw !important;
+    }
+
+    .view-grid {
+        flex-direction: column !important;
+    }
+
+    .view-grid-texts {
+        flex-direction: column !important;
+    }
+
+    .view-grid-content {
+        width: 100% !important;
     }
 }
 

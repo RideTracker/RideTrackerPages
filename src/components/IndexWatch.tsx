@@ -81,11 +81,11 @@ export default function WearableScroller() {
         <div ref={divRef} className="scroller-container" style={{
             width: "100%"
         }}>
-            <div style={{
+            <div className="view-grid" style={{
                 display: "flex",
                 flexDirection: "row"
             }}>
-                <div style={{ flex: 1 }}>
+                <div className="view-grid-images" style={{ flex: 1 }}>
                     <div style={{
                         backgroundColor: "rgba(0, 0, 0, .25)",
                         
@@ -138,7 +138,7 @@ export default function WearableScroller() {
 
                     padding: "0 2.5vw",
                     boxSizing: "border-box"
-                }}>
+                }} className="view-grid-content">
                     <h2 style={{
                         fontSize: "2.5vw",
                         color: "#BB87FC",
@@ -151,7 +151,7 @@ export default function WearableScroller() {
                         display: "flex",
                         flexDirection: "row",
                         gap: "1em"
-                    }}>
+                    }} className="view-grid-texts">
                         <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${fraction}s` }}>
                             <h3>Going on a quick ride? Leave your phone at home!</h3>
 

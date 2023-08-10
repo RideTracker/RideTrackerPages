@@ -8,7 +8,7 @@ export default function AnimatableLogo({ styles }: AnimatiableLogoProps) {
     const [ imageLoaded, setImageLoaded ] = useState<boolean>(false);
 
     return (
-        <a href="/">
+        <a href="/" className="animatable-logo">
             <h1 style={{
                 display: "flex",
                 flexDirection: "column"

@@ -9,10 +9,7 @@ export default function AnimatableLogo({ styles }: AnimatiableLogoProps) {
 
     return (
         <a href="/" className="animatable-logo">
-            <h1 style={{
-                display: "flex",
-                flexDirection: "column"
-            }}>
+            <h1>
                 <img className={(imageLoaded)?("rotate-top-to-bottom"):(undefined)} alt="Ride Tracker" src="/images/logos/logo-white-cropped.png" style={{
                     maxWidth: "80vw",
 

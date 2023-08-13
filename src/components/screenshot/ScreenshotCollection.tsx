@@ -7,20 +7,7 @@ export type ScreenshotCollectionProps = {
 
 export function ScreenshotCollection({ style, children }: ScreenshotCollectionProps) {
     return (
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-
-            flex: 1,
-        
-            gap: "1em",
-
-            position: "relative",
-
-            height: "max-content",
-
-            ...style
-        }}>
+        <div className="screenshot-collection" style={style}>
             {children}
         </div>
     );

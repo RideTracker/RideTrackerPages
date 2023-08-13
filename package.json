@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.65.1",
     "typeface-roboto": "^1.1.13",
     "typescript": "^5.1.6",
     "web-vitals": "^2.1.4"

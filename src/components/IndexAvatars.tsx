@@ -71,21 +71,18 @@ const sections: ScreenshotScrollerSection[] = [
 ];
 
 export default function IndexAvatars() {
-    const divRef = useRef<HTMLDivElement>(null);
+    const contentRef = useRef<HTMLDivElement>(null);
+    const imagesRef = useRef<HTMLDivElement>(null);
 
-    const fraction = useVisibleFraction(divRef, 1.25);
+    const contentFraction = useVisibleFraction(contentRef, 1);
+    const imagesFraction = useVisibleFraction(imagesRef, 1);
     
-    console.log({ fraction });
-
     return (
-        <div ref={divRef} className="scroller-container" style={{
+        <div className="scroller-container" style={{
             width: "100%"
         }}>
-            <div style={{
-                display: "flex",
-                flexDirection: "row"
-            }}>
-                <div className="view-grid-content" style={{
+            <div className="view-grid">
+                <div ref={contentRef} className="view-grid-content" style={{
                     width: "60%",
                     
                     backgroundColor: "rgba(0, 0, 0, .15)",
@@ -99,9 +96,11 @@ export default function IndexAvatars() {
                     boxSizing: "border-box"
                 }}>
                     <h2 style={{
-                        fontSize: "2.5vw",
+                        fontSize: "2.5em",
                         color: "#BB87FC",
-                        animationDelay: `-${fraction}s`
+                        animationDelay: `-${contentFraction}s`,
+                        textAlign: "left",
+                        width: "100%"
                     }} className="animated-wearable-title">
                         Be yourself, surrondered by people who share your interest!
                     </h2>
@@ -111,14 +110,14 @@ export default function IndexAvatars() {
                         flexDirection: "row",
                         gap: "1em"
                     }} className="view-grid-texts">
-                        <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${fraction}s` }}>
+                        <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${contentFraction}s` }}>
                             <h3>We are a community!</h3>
 
                             <p>Fitness and health related apps often overlook the obvious: the sport, the hobby, and the interest itself!</p>
                             <p>RideTracker aims to be a social platform for all cyclists to come together!</p>
                         </div>
                         
-                        <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${fraction}s` }}>
+                        <div className="animated-wearable-content" style={{ flex: 1, animationDelay: `-${contentFraction}s` }}>
                             <h3>Make your own cyclist emoji!</h3>
 
                             <p>We have an exciting avatar editor where you can design your very own cyclist emoji with a wide range of options such as sunglasses, helmets, jerseys, and heads.</p>
@@ -128,7 +127,7 @@ export default function IndexAvatars() {
                     </div>
                 </div>
 
-                <div className="view-grid-images" style={{ flex: 1 }}>
+                <div ref={imagesRef} className="view-grid-images" style={{ flex: 1 }}>
                     <div style={{
                         backgroundColor: "rgba(0, 0, 0, .25)",
                         
@@ -152,19 +151,19 @@ export default function IndexAvatars() {
                         }}>
                             <ScreenshotCollection>
                                 {[...sections].flatMap((section, index) => [ ...section.columns[0].images ].map((image) => (
-                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-1`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${fraction}s`, borderRadius: "50%" }}/>
+                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-1`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${imagesFraction}s`, borderRadius: "50%" }}/>
                                 )))}
                             </ScreenshotCollection>
                             
                             <ScreenshotCollection>
                                 {sections.flatMap((section, index) => section.columns[1].images.map((image) => (
-                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-2`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${fraction}s`, borderRadius: "50%" }}/>
+                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-2`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${imagesFraction}s`, borderRadius: "50%" }}/>
                                 )))}
                             </ScreenshotCollection>
                             
                             <ScreenshotCollection>
                                 {[...sections].flatMap((section, index) => [ ...section.columns[2].images ].map((image) => (
-                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-3`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${fraction}s`, borderRadius: "50%" }}/>
+                                    <ScreenshotImage className={`animated-wearable animated-wearable-column-3`} key={index + image.alt} source={image.source} alt={image.alt} style={{ animationDelay: `-${imagesFraction}s`, borderRadius: "50%" }}/>
                                 )))}
                             </ScreenshotCollection>
                         </div>

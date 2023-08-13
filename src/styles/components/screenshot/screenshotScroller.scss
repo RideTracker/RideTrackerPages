@@ -1,0 +1,19 @@
+.screenshot-scroller {
+    position: sticky;
+    top: 0;
+
+    overflow: hidden;
+
+    .screenshot-scroller-content {
+        transform: rotateZ(25deg);
+
+        height: 100%;
+
+        display: flex;
+
+        position: relative;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -49,6 +49,14 @@ export default function ChangelogPage() {
                             </ul>
 
                             <p>This was triggered by an issue caused in <a href="#version-0.9.3">Version 0.9.3</a> where we've changed the structure of how we store coordinates, altitudes, speeds, and more data, for future implementations of <a href="#wearable-version-0.9.0">Wearable Version 0.9.0</a> and the RideTracker app.</p>
+
+                            <p>
+                                <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank" style={{ marginLeft: "auto" }}>
+                                    <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
+                                        height: "8vh"
+                                    }}/>
+                                </a>
+                            </p>
                         </div>
 
                         <div id="version-0.9.3">
@@ -76,6 +84,14 @@ export default function ChangelogPage() {
                             <small>* subscription based feature which won't be available until after the beta period.</small><br/>
                             
                             <small>** feature related to wearable which won't be available until <a href="#wearable-version-0.9.0">Wearable Version 0.9.0</a>.</small>
+
+                            <p>
+                                <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank" style={{ marginLeft: "auto" }}>
+                                    <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
+                                        height: "8vh"
+                                    }}/>
+                                </a>
+                            </p>
                         </div>
 
                         <div id="version-0.9.2">

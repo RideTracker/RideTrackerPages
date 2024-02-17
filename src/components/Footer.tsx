@@ -14,9 +14,10 @@ export default function Footer() {
                     gap: "1em"
                 }} className="footer-links">
                     <div style={{ margin: "auto auto auto 0" }}>
-                        <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank">
+                        <a href="#play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp">
                             <img src="/images/google-play-badge.png" alt="Google Play Store badge" style={{
-                                height: "8vh"
+                                height: "8vh",
+                                cursor: "not-allowed"
                             }}/>
                         </a>
                     </div>
@@ -29,7 +30,7 @@ export default function Footer() {
                     }}>
                         <p style={{ color: "#BB87FC" }}>Stores</p>
 
-                        <a href="https://play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" target="_blank">Google Play</a>
+                        <a href="#play.google.com/store/apps/details?id=com.norasoderlund.ridetrackerapp" style={{ cursor: "not-allowed" }}>Google Play</a>
                     </div>
 
                     <div style={{

@@ -21,15 +21,15 @@ export default function IndexPage() {
 
             <IndexAvatars/>
 
-<div style={{
-    backgroundColor: "rgba(255, 255, 255, .05)"
-}}>
-    <Container>
-        <h2>Currently in the works, follow me to see the progress:</h2>
-
-        <DeveloperContact/>
-    </Container>
-</div>
+            <div style={{
+                backgroundColor: "rgba(255, 255, 255, .05)"
+            }}>
+                <Container>
+                    <h2>This app has been discontinued and is no longer worked on.</h2>
+            
+                    <DeveloperContact/>
+                </Container>
+            </div>
         
             <Footer/>
         </React.Fragment>
